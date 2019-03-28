@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif; }
+  body img {
+    width: 100%; }
+
+.main_cnntn {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: black; }
+  .main_cnntn .contentt {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%; }
+    .main_cnntn .contentt .logo {
+      width: 400px;
+      margin-bottom: 2.5em; }
+    .main_cnntn .contentt .list_hhstgss {
+      color: white;
+      position: absolute;
+      bottom: 100px; }
+      .main_cnntn .contentt .list_hhstgss .hstgg {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1.5em;
+        margin-bottom: .2em; }
+  .main_cnntn .spc_bg_vdo {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    transform: scale(1.6);
+    opacity: .2;
+    top: 0;
+    left: 0; }
+    .main_cnntn .spc_bg_vdo iframe {
+      width: 100%;
+      height: 100%; }
+
+.main_cnntn::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-image: url(../images/overlay.png); }
+
+@media only screen and (max-width: 1000px) {
+  .spc_bg_vdo {
+    -webkit-transform: scale(2.3) !important;
+    -ms-transform: scale(2.3) !important;
+    transform: scale(2.3) !important; } }
+
+@media only screen and (max-width: 600px) {
+  .spc_bg_vdo {
+    -webkit-transform: scale(4.3) !important;
+    -ms-transform: scale(4.3) !important;
+    transform: scale(4.3) !important; }
+  .ttitt h4 {
+    font-size: 1.4rem !important;
+    text-align: center; }
+  .logo {
+    width: 200px !important; } }
